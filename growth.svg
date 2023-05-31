@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<!DOCTYPE svgplus [ <!ENTITY duration "0.25s"> ]>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
     <style>
       path {
         stroke: blue;
         fill-opacity: 0.5;
+        stroke-linejoin: round;
       }
       #one {
         fill: #f00;
@@ -26,7 +28,7 @@
     <animate
       id="oneGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M0,0 L50,0 100,0z; M0,0 L50,30 100,0z; M0,0 L50,30 100,0z"
       keyTimes="0; 1; 1"
@@ -35,7 +37,7 @@
     <animate
       id="sixGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M50,30 L0,0 100,0z; M50,30 L75,15 100,0z; M0,0z"
       keyTimes="0; 1; 1"
@@ -44,7 +46,7 @@
     <animate
       id="elevenGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M0,0 L25,15 50,30z; M0,0 L100,0 50,30z; M0,0 L100,0 50,30z"
       keyTimes="0; 1; 1"
@@ -55,7 +57,7 @@
     <animate
       id="twoGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M100,0 L75,15 50,30z; M100,0 L100,60 50,30z; M100,0 L100,60 50,30z"
       keyTimes="0; 1; 1"
@@ -64,7 +66,7 @@
     <animate
       id="sevenGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M50,30 L100,0 100,60z; M50,30 L75,45 100,60z; M0,0z"
       keyTimes="0; 1; 1"
@@ -75,7 +77,7 @@
     <animate
       id="threeGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M100,60 L75,45 50,30z; M100,60 L50,100 50,30z; M100,60 L50,100 50,30z"
       keyTimes="0; 1; 1"
@@ -84,7 +86,7 @@
     <animate
       id="eightGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M50,30 L100,60 50,100z; M50,30 L50,65 50,100z; M0,0z"
       keyTimes="0; 1; 1"
@@ -95,7 +97,7 @@
     <animate
       id="fourGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M50,100 L50,60 50,30z; M50,100 L0,60 50,30z; M50,100 L0,60 50,30z"
       keyTimes="0; 1; 1"
@@ -104,7 +106,7 @@
     <animate
       id="nineGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M0,60 L50,100 50,30z; M0,60 L25,45 50,30z; M0,0z"
       keyTimes="0; 1; 1"
@@ -115,7 +117,7 @@
     <animate
       id="fiveGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M50,30 L25,45 0,60z; M50,30 L0,0 0,60z; M50,30 L0,0 0,60z"
       keyTimes="0; 1; 1"
@@ -124,7 +126,7 @@
     <animate
       id="tenGrow"
       attributeName="d"
-      dur="0.5s"
+      dur="&duration;"
       fill="freeze"
       values="M0,0 L0,60 50,30z; M0,0 L25,15 50,30z; M0,0z"
       keyTimes="0; 1; 1"
