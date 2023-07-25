@@ -30,8 +30,8 @@
       attributeName="d"
       dur="&duration;"
       fill="freeze"
-      values="M0,0 L50,0 100,0z; M0,0 L50,30 100,0z; M0,0 L50,30 100,0z"
-      keyTimes="0; 1; 1"
+      values="M0,0 L50,0 100,0z; M0,0 L50,30 100,0z"
+      keyTimes="0; 1"
       begin="0s"
     />
     <animate
