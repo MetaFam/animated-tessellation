@@ -17,6 +17,8 @@ class Point {
 function App() {
   const [tris, setTris] = useState([])
 
+const [styles,setStyles] = useState("") 
+
   useEffect(() => {
     const load = async () => {
       const res = await fetch("Big Metaocto Polyart Puzzle.svg") 
@@ -28,23 +30,33 @@ function App() {
       const truth = []
       for (const point of points) {
         const raw = point.getAttribute("points").split(/[ ,]/).map((p) => Number(p))
-        truth.push([
-          new Point({ x: raw[0], y: raw[1] }),
-          new Point({ x: raw[2], y: raw[3] }),
-          new Point({ x: raw[4], y: raw[5] }),
-        ])
+        truth.push({
+          points: [ 
+            new Point({ x: raw[0], y: raw[1] }),
+            new Point({ x: raw[2], y: raw[3] }),
+            new Point({ x: raw[4], y: raw[5] }),
+          ],
+          className: point.className 
+        })
       }
       setTris(truth)
+
+      const styles = svg.querySelector("style").innerHTML
+      setStyles(styles)
     }
     load()
   }, []) 
 
   return (
     <main>
-      <svg viewBox="0 0 427.53 374.98" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 427.5 374.9" xmlns="http://www.w3.org/2000/svg">
+
+<style type="text/css"> {styles}
+</style>
+
         {tris.map((tri, idx) => ( 
-          <polygon key={idx} points={
-            [tri[0].x, tri[0].y, tri[1].x, tri[1].y, tri[2].x, tri[2].y].join(" ")
+          <polygon key={idx} className={tri.className} points={
+            [tri.points[0].x, tri.points[0].y, tri.points[1].x, tri.points[1].y, tri.points[2].x, tri.points[2].y].join(" ")
           }/>
         ))}
          
