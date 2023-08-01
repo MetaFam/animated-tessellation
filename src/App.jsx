@@ -19,7 +19,7 @@ const [styles,setStyles] = useState("")
 
   useEffect(() => {
     const load = async () => {
-      const res = await fetch("Metaocto Polyart Puzzle.svg") 
+      const res = await fetch("Big Metaocto Polyart Puzzle.svg") 
       const parser = new DOMParser();
       const svg = parser.parseFromString(await res.text(), "application/xml");
       console.log(svg)

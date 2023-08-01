@@ -11,3 +11,7 @@ Currently, two official plugins are available:
 On the terminal App.jsx write
 npm run dev
 
+Reading points from left to rigth top bottom (
+One point = first point horizontal-orientation,second point vertical-orientation 
+)
+
