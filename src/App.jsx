@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 class Point { 
@@ -21,7 +19,7 @@ const [styles,setStyles] = useState("")
 
   useEffect(() => {
     const load = async () => {
-      const res = await fetch("Big Metaocto Polyart Puzzle.svg") 
+      const res = await fetch("Metaocto Polyart Puzzle.svg") 
       const parser = new DOMParser();
       const svg = parser.parseFromString(await res.text(), "application/xml");
       console.log(svg)
@@ -36,7 +34,7 @@ const [styles,setStyles] = useState("")
             new Point({ x: raw[2], y: raw[3] }),
             new Point({ x: raw[4], y: raw[5] }),
           ],
-          className: point.className 
+          className: point.classList.toString(),
         })
       }
       setTris(truth)
@@ -51,14 +49,32 @@ const [styles,setStyles] = useState("")
     <main>
       <svg viewBox="0 0 427.5 374.9" xmlns="http://www.w3.org/2000/svg">
 
-<style type="text/css"> {styles}
-</style>
+        <style type="text/css">{styles}</style>
 
-        {tris.map((tri, idx) => ( 
-          <polygon key={idx} className={tri.className} points={
-            [tri.points[0].x, tri.points[0].y, tri.points[1].x, tri.points[1].y, tri.points[2].x, tri.points[2].y].join(" ")
-          }/>
-        ))}
+        {tris.map((tri, idx) => { 
+          const [p1, p2, p3] = tri.points
+          const mid = new Point({
+            x: p1.x + ((p2.x - p1.x) / 2),
+            y: p1.y + ((p2.y - p1.y) / 2),
+          }) 
+          return ( 
+            <polygon key={idx} className={tri.className} points={
+              [p1.x, p1.y, mid.x, mid.y, p2.x, p2.y].join(" ")
+            }>
+              <animate
+                attributeName="points"
+                dur="2s"
+                fill="freeze"
+                values={`
+                  ${[p1.x, p1.y, mid.x, mid.y, p2.x, p2.y].join(" ")};
+                  ${[p1.x, p1.y, p3.x, p3.y, p2.x, p2.y].join(" ")}
+                `}
+                keyTimes="0; 1"
+                begin="0s"
+              />
+            </polygon>
+          )
+        })}
          
       </svg>
     </main>
