@@ -6,16 +6,15 @@ class Point {
     this.x = x 
     this.y = y 
   }
-   
+
   toString() {
     return `<${this.x}, ${this.y}>`
   }
 }
 
-function App() {
+export default function App() {
   const [tris, setTris] = useState([])
-
-const [styles,setStyles] = useState("") 
+  const [styles, setStyles] = useState("") 
 
   useEffect(() => {
     const load = async () => {
@@ -25,18 +24,21 @@ const [styles,setStyles] = useState("")
       console.log(svg)
 
       const points = svg.querySelectorAll("polygon")
-      const truth = []
-      for (const point of points) {
-        const raw = point.getAttribute("points").split(/[ ,]/).map((p) => Number(p))
-        truth.push({
+      const truth = Array.from(points).map((point) => {
+        const raw = (
+          point.getAttribute("points")
+          .split(/[ ,]/)
+          .map((p) => Number(p))
+        )
+        return {
           points: [ 
             new Point({ x: raw[0], y: raw[1] }),
             new Point({ x: raw[2], y: raw[3] }),
             new Point({ x: raw[4], y: raw[5] }),
           ],
           className: point.classList.toString(),
-        })
-      }
+        }
+      })
       setTris(truth)
 
       const styles = svg.querySelector("style").innerHTML
@@ -67,9 +69,12 @@ const [styles,setStyles] = useState("")
                 fill="freeze"
                 values={`
                   ${[p1.x, p1.y, mid.x, mid.y, p2.x, p2.y].join(" ")};
-                  ${[p1.x, p1.y, p3.x, p3.y, p2.x, p2.y].join(" ")}
+                  ${[p1.x, p1.y, p3.x, p3.y, p2.x, p2.y].join(" ")};
+                  ${[p1.x, p1.y, p3.x, p3.y, p2.x, p2.y].join(" ")};
+                  ${[p1.x, p1.y, mid.x, mid.y, p2.x, p2.y].join(" ")}
                 `}
-                keyTimes="0; 1"
+                repeatCount="indefinite"
+                keyTimes="0; 0.75; 0.90; 1"
                 begin="0s"
               />
             </polygon>
@@ -80,5 +85,3 @@ const [styles,setStyles] = useState("")
     </main>
   )
 }
-
-export default App

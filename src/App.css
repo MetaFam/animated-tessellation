@@ -12,5 +12,5 @@ svg {
 
 polygon {
   stroke: lightblue;
-  
+  stroke-width: 0.25;
 }
