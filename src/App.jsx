@@ -14,7 +14,7 @@ class Point {
 
 export default function App() {
   const [viewbox, setViewbox] = useState('0 0 100 100')
-  const [tris, setTris] = useState<Array<Point>>([])
+  const [tris, setTris] = useState([])
   const [styles, setStyles] = useState("") 
 
   useEffect(() => {
