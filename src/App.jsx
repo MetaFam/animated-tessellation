@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 
 class Point { 
@@ -13,7 +13,8 @@ class Point {
 }
 
 export default function App() {
-  const [tris, setTris] = useState([])
+  const [viewbox, setViewbox] = useState('0 0 100 100')
+  const [tris, setTris] = useState<Array<Point>>([])
   const [styles, setStyles] = useState("") 
 
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function App() {
       })
       setTris(truth)
 
+      setViewbox(svg.querySelector("svg").getAttribute("viewBox"))
       const styles = svg.querySelector("style").innerHTML
       setStyles(styles)
     }
@@ -56,7 +58,7 @@ const midpoint = (p1, p2) => (
 
   return (
     <main>
-      <svg viewBox="0 0 427.5 374.9" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox={viewbox} xmlns="http://www.w3.org/2000/svg">
 
         <style type="text/css">{styles}</style>
 
