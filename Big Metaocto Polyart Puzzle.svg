@@ -178,7 +178,7 @@
 		<polygon class="st2" points="245.5,202.1 253.6,197 247.8,210.4 		"/>
 		<polygon class="st2" points="252.6,205 263.6,211 248.8,213 		"/>
 		<polygon class="st1" points="267.2,210.4 257.4,204.9 277,210.6 		"/>
-		<polygon class="st2" points="254.2,201.3 261,187.9 257.6,202.6 		"/>
+		<polygon class="st0" points="254.2,201.3 261,187.9 257.6,202.6 		"/>
 		<polygon class="st1" points="324.1,215 324.4,223.8 329,216.1 		"/>
 	</g>
 	<polygon class="st1" points="393.8,207 372.3,214.4 409.3,214.4 	"/>
@@ -230,7 +230,7 @@
 	<polygon class="st2" points="273.4,145.6 266.4,179.3 282.5,160.1 	"/>
 	<polygon class="st1" points="287.8,157 297.6,181.9 287.4,201.7 	"/>
 	<polygon class="st2" points="285.3,157.8 274.1,190 285,173"/>
-	<polygon class="st2" points="229.4,122.9 229.4,123.5 230.7,155.8 223.1,151.9 	"/>
+	<polygon class="st2" points="229.4,122.9 230.7,155.8 223.1,151.9 	"/>
 	<polygon class="st2" points="242.3,131.2 245.6,171.3 258.7,175.9 	"/>
 	<polygon class="st2" points="267.7,180.7 279.7,166.1 272.7,186.5 	"/>
 	<polygon class="st0" points="311.8,165.3 311.8,180.5 320.1,190 	"/>
@@ -409,7 +409,7 @@
 	<polygon class="st1" points="164.3,208.9 157.2,220 146.5,220.7 	"/>
 	<polygon class="st2" points="170.5,215 170.8,226.1 183.4,207 	"/>
 	<polygon class="st2" points="222.4,153.8 230.7,158 214.9,190.4 	"/>
-	<polygon class="st0" points="214,198.7 230.7,163 228.9,184.4 	"/>
+	<polygon class="st2" points="214,198.7 230.7,163 228.9,184.4 	"/>
 	<polygon class="st1" points="216.3,159.7 206.7,176.7 194.5,177.1 	"/>
 	<polygon class="st2" points="211,177.3 218.5,163.1 211.8,189 	"/>
 	<polygon class="st1" points="195.1,193.9 185.6,202.6 172.5,202.6 	"/>
