@@ -1,17 +1,11 @@
-# React + Vite
+# Animated Octo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Commands
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
-On the terminal App.jsx write
-npm run dev
-
-Reading points from left to rigth top bottom (
-One point = first point horizontal-orientation,second point vertical-orientation 
-)
-
+* `npm run dev`: run local development server
+* `npm run gh:publish`: publish to GitHub
+* `git pull`: retrieve changes from github
+* `git commit -am "sentence"`: commit changes with message "sentence"
+* `git push`: save changes to github
+* `git status`: check status of the repository 
+* `git diff`: show current changes
