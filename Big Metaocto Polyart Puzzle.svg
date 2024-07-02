@@ -182,7 +182,7 @@
 		<polygon class="st1" points="324.1,215 324.4,223.8 329,216.1 		"/>
 	</g>
 	<polygon class="st1" points="393.8,207 372.3,214.4 409.3,214.4 	"/>
-	<polyline class="st2" points="394.4,217.6 412.1,217.9 415.7,226.7 394.4,217.6 	"/>
+	<polygon class="st2" points="394.4,217.6 412.1,217.9 415.7,226.7	"/>
 	<polygon class="st2" points="413.9,217.9 420.5,219.9 426.5,242.8 	"/>
 	<polygon class="st2" points="406.4,225.4 417.7,232.2 418.9,247.5 	"/>
 	<polygon class="st2" points="421.3,237 427.5,249.9 420.3,270.2 	"/>
@@ -229,7 +229,7 @@
 	<polygon class="st1" points="273.3,141.5 285.3,153.9 283.3,158 	"/>
 	<polygon class="st2" points="273.4,145.6 266.4,179.3 282.5,160.1 	"/>
 	<polygon class="st1" points="287.8,157 297.6,181.9 287.4,201.7 	"/>
-	<path class="st2" d="M285.3,157.8L274.1,190c0,0,11.1-19.1,10.9-17.5S285.3,157.8,285.3,157.8z"/>
+	<polygon class="st2" points="285.3,157.8 274.1,190 285,173"/>
 	<polygon class="st2" points="229.4,122.9 229.4,123.5 230.7,155.8 223.1,151.9 	"/>
 	<polygon class="st2" points="242.3,131.2 245.6,171.3 258.7,175.9 	"/>
 	<polygon class="st2" points="267.7,180.7 279.7,166.1 272.7,186.5 	"/>
@@ -243,7 +243,7 @@
 	<polygon class="st0" points="180,147.3 186.3,149.9 216.9,116.3 	"/>
 	<polygon class="st2" points="228.4,107.5 226.8,116.8 192.9,147.1 	"/>
 	<polygon class="st0" points="274,113.9 310.4,165.1 290,150.3 	"/>
-	<path class="st0" d="M265.4,99.5c0,0,22,49.8,22,50.5s-16.1-21.1-16.1-21.1L265.4,99.5z"/>
+	<polygon class="st2" points="265.4,99.5 287.4,150 271.3,128,9	"/>
 	<polygon class="st2" points="231.2,109.5 238.2,99.6 233.3,141.7 	"/>
 	<polygon class="st2" points="239.2,111.5 241.8,171.3 233.4,180.5 	"/>
 	<polygon class="st2" points="241.3,102.6 242,121.5 261.4,177.9 	"/>
@@ -291,7 +291,7 @@
 	<polygon class="st2" points="331.2,294.7 328.1,302.6 322,304.8 	"/>
 	<polygon class="st2" points="322,306.1 328.2,304.1 320.1,313.3 	"/>
 	<polygon class="st2" points="320.2,315.3 327.2,307.4 322,324.7 	"/>
-	<path class="st2" d="M323.1,326c0-0.3,3.7-12.5,3.7-12.5l0.3,10L323.1,326z"/>
+	<polygon class="st2" points="323.1,326 326.8,313.5 327.1,323.5"/>
 	<polygon class="st2" points="323.7,328.1 327.3,325.5 332.9,333.3 	"/>
 	<polygon class="st2" points="323.8,330.3 333.1,334.8 326.9,335.9 	"/>
 	<polygon class="st2" points="328.1,337.9 333.7,336.7 333.5,344.5 	"/>
@@ -341,7 +341,7 @@
 	<polygon class="st2" points="116.9,338.1 111.5,333.3 111.9,326.8 	"/>
 	<polygon class="st2" points="113.4,327 115.5,332.7 115.8,327.5 	"/>
 	<polygon class="st2" points="123.9,333 127.3,335.9 124.4,338.9 	"/>
-	<polyline class="st0" points="97.9,184.3 98.5,188.1 95.4,197.4 96.4,175.2 97.9,184.3 	"/>
+	<polygon class="st0" points="97.9,184.3 98.5,188.1 95.4,197.4 96.4,175.2	"/>
 	<polygon class="st0" points="89.1,190.4 95,203.8 94,215.9 	"/>
 	<polygon class="st2" points="86,187.5 84.5,204.7 92.2,217.3 	"/>
 	<polygon class="st1" points="84.9,181.2 79.2,192.9 82.2,199.3 	"/>
@@ -349,18 +349,18 @@
 	<polygon class="st2" points="84.7,208.9 94,225 85.5,229 	"/>
 	<polygon class="st2" points="104.3,157.8 97.1,167.1 99.2,179.6 	"/>
 	<polygon class="st2" points="94.7,169 93.2,195.5 87.2,180 	"/>
-	<path class="st1" d="M155.8,117.8c-0.1,0.3-2.1,8-2.1,8l-22.1,4.1L155.8,117.8z"/>
+	<polygon class="st1" points="155.8,117.8 153.7,125.8 131.6,129.9"/>
 	<polygon class="st1" points="150.6,128.2 128.8,132.6 122.7,140.1 	"/>
 	<polygon class="st2" points="153,129.7 140,135.5 139.8,146 	"/>
 	<polygon class="st2" points="138,136.9 137,147.5 123.5,156.9 	"/>
 	<polygon class="st2" points="135.7,136.7 122.8,143 122.6,155.1 	"/>
 	<polygon class="st0" points="121,147.3 120.3,158.4 105.7,175.2 	"/>
-	<path class="st2" d="M120.3,144.9c0,0.3-16.5,28.1-16.5,28.1l3.6-19.1L120.3,144.9z"/>
+	<polygon class="st1" points="120.3,144.9 103.8,173 107.4,153.9 "/>
 	<polygon class="st1" points="123.8,135 117.7,144 106.9,151.7 	"/>
 	<polygon class="st1" points="116.5,140.6 97.1,156 104.4,153.2 	"/>
 	<polygon class="st1" points="103.8,155.6 96.3,158.8 85.9,176.1 	"/>
 	<polygon class="st1" points="184.2,111 157.5,117.5 156.3,125.7 	"/>
-	<path class="st2" d="M184.4,113.2c-0.2,0.1-26.8,14-26.8,14l-9.3,13L184.4,113.2z"/>
+	<polygon class="st1" points="184.4,113.2 157.6,127.2 148.3,140.2 "/>
 	<polygon class="st2" points="147.7,145.4 190.4,111.7 155.5,145.8 	"/>
 </g>
 <g id="Leg-3">
@@ -387,7 +387,7 @@
 	<polygon class="st2" points="166.6,296.9 175.9,299 188,294.2 	"/>
 	<polygon class="st2" points="180,299.6 194.1,294 203.1,298.4 	"/>
 	<polygon class="st2" points="193.4,301.5 204.9,301 209.1,310.4 	"/>
-	<path class="st2" d="M206,311l6.8,4.4c0,0,1.5,6.5,1.5,7S206,311,206,311z"/>
+	<polygon class="st3" points="206,311 212.8,315.4 214.3,321.9 215.8,328.9 "/>
 	<polygon class="st2" points="210,319.5 214,324.7 212.4,340.1 	"/>
 	<polygon class="st2" points="210,333.2 211,343 205.7,355 	"/>
 	<polygon class="st2" points="204.4,351 201.8,358.7 194.1,359.7 	"/>
@@ -404,7 +404,7 @@
 	<polygon class="st0" points="209.8,188 208.8,202.6 203.3,209.4 	"/>
 	<polygon class="st2" points="208.8,178.8 203.8,198.7 203.1,185.9 	"/>
 	<polygon class="st1" points="201.8,179 183.6,190.4 192.8,180.1 	"/>
-	<polyline class="st0" points="175.8,222.5 199.9,209.6 201.1,191.4 	"/>
+	<polygon class="st0" points="175.8,222.5 199.9,209.6 201.1,191.4 	"/>
 	<polygon class="st1" points="182.2,204.5 163.7,215 170,205.5 	"/>
 	<polygon class="st1" points="164.3,208.9 157.2,220 146.5,220.7 	"/>
 	<polygon class="st2" points="170.5,215 170.8,226.1 183.4,207 	"/>
@@ -416,7 +416,7 @@
 	<polygon class="st1" points="203.8,180.3 197,189.5 177.3,199.2 	"/>
 </g>
 <g id="_2_Legs">
-	<path class="st2" d="M53.8,219.6l-1.4,12.8c0,0-11.8,5.7-11.7,5.4S53.8,219.6,53.8,219.6z"/>
+	<polygon class="st2" points="53.8,219.6 52.4,232.4 40.6,238.1 z"/>
 	<polygon class="st2" points="51.4,236.1 40.5,252 40.9,239.3 	"/>
 	<polygon class="st2" points="47.2,246.7 41.1,256 47,263.2 	"/>
 	<polygon class="st2" points="46.6,222.1 46,228.1 39.9,235.9 	"/>
@@ -428,14 +428,14 @@
 	<polygon class="st1" points="29.9,285.3 32.9,283.2 27.2,281 	"/>
 	<polygon class="st1" points="25.2,281.3 28.1,285.4 20.7,284.7 	"/>
 	<polygon class="st2" points="19.4,286.6 24.2,286.9 22.8,293.3 	"/>
-	<polyline class="st2" points="49.1,247.5 48.9,270.9 53.2,259.5 49.1,247.7 	"/>
+	<polygon class="st2" points="49.1,247.5 48.9,270.9 53.2,259.5 "/>
 	<polygon class="st2" points="50.3,272.9 53.8,260.7 51.7,285.6 	"/>
 	<polygon class="st2" points="55,266 58.8,281.6 52,295.3 	"/>
 	<polygon class="st0" points="52.1,302.9 57.7,295.3 52.2,297.7 	"/>
 	<polygon class="st0" points="52.5,296.2 58.3,285 57.1,293.7 	"/>
 	<polygon class="st1" points="61.5,171 53.5,192.7 52.3,181.6 	"/>
-	<path class="st2" d="M61.9,189.7c-0.3,0.2-7.8,8.9-7.8,8.9l0.5,7.8L61.9,189.7z"/>
-	<path class="st2" d="M63.1,191.7c-0.3,0.3-7.1,16-7.1,16l7.7,7.4L63.1,191.7z"/>
+	<polygon class="st2" points="61.9,189.7 54.1,198.6 54.6,206.4 "/>
+	<polygon class="st2" points="63.1,191.7 56,207.7 63.7,215.1 "/>
 	<polygon class="st2" points="55.7,209 62.9,217.9 55.1,229.3 	"/>
 	<polygon class="st2" points="51.2,193 53,210.3 49.5,204.8 	"/>
 	<polygon class="st2" points="49.4,209.7 53.5,215.8 48,224.8 	"/>
