@@ -72,7 +72,7 @@ const midpoint = (p1, p2) => (
               <animate
                 id={`poly${idx}`}
                 attributeName="points"
-                dur="0.02s"
+                dur="0.005s"
                 fill="freeze"
                 values={`
                   ${[mid.x, mid.y, mid.x, mid.y, mid.x, mid.y].join(" ")};
