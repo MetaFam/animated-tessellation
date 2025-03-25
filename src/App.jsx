@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+// eslint-disable-next-line no-unused-vars
+import React from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
-class Point { 
-  constructor({ x, y })  {
-    this.x = x 
-    this.y = y 
+class Point {
+  constructor({ x = 0, y = 0 } = {})  {
+    this.x = x
+    this.y = y
   }
 
   toString() {
@@ -14,7 +16,9 @@ class Point {
 
 export default function App() {
   const [viewbox, setViewbox] = useState('0 0 100 100')
-  const [tris, setTris] = useState([])
+  const [tris, setTris] = useState([
+    { points: [new Point(), new Point(), new Point()], className: '' }
+  ])
   const [styles, setStyles] = useState("") 
 
   useEffect(() => {
@@ -22,15 +26,15 @@ export default function App() {
       const res = await fetch("Big Metaocto Polyart Puzzle.svg") 
       const parser = new DOMParser();
       const svg = parser.parseFromString(await res.text(), "application/xml");
-      console.log(svg)
-
       const points = svg.querySelectorAll("polygon")
+      if(points.length === 0) throw new Error("No polygons found.")
       const truth = Array.from(points).map((point) => {
         const raw = (
           point.getAttribute("points")
-          .split(/[ ,]/)
+          ?.split(/[ ,]/)
           .map((p) => Number(p))
         )
+        if(!raw) throw new Error("No points found.")
         return {
           points: [ 
             new Point({ x: raw[0], y: raw[1] }),
@@ -42,8 +46,8 @@ export default function App() {
       })
       setTris(truth)
 
-      setViewbox(svg.querySelector("svg").getAttribute("viewBox"))
-      const styles = svg.querySelector("style").innerHTML
+      setViewbox(svg.querySelector("svg")?.getAttribute("viewBox") ?? '')
+      const styles = svg.querySelector("style")?.innerHTML ?? ''
       setStyles(styles)
     }
     load()
